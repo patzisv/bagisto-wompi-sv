@@ -1,0 +1,25 @@
+{
+  "name": "kargo/wompi-sv-bagisto",
+  "description": "Wompi El Salvador 3DS gateway for Bagisto 2.x",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Kargo\\WompiSV\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kargo\\WompiSV\\Providers\\WompiSVServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0 || ^11.0",
+    "bagisto/bagisto": "^2.2"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
